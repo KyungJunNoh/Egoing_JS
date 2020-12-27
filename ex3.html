@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .js{
+            font-weight: bold;
+            color:red;
+        }
+        #first{
+            color:green;
+        }
+        span{
+            color:blue;
+        }
+    </style>
+    <title>ex3.html</title>
+</head>
+<body>
+    <h1><a href="index.html"">WEB</a></h1>
+    <input id ="night_day"type ="button" value = "night" onclick = "
+        var target = document.querySelector('body');
+        if (document.querySelector('#night_day').value ==='night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value = 'day';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i<alist.length){
+                console.log(alist[i]);
+                alist[i].style.color = 'powderblue';
+                i = i + 1;
+            }
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = 'night';
+            
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i<alist.length){
+                console.log(alist[i]);
+                alist[i].style.color = 'blue';
+                i = i + 1;
+            }
+        }
+    ">
+    
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    
+    <h2>JAVAScript</h2>
+    <p>
+        <span id ="first" class="js">JavaScript</span>
+        Lorem ipsum dolor sit <span>amet</span> consectetur adipisicing elit. Ratione illo quas harum voluptatem debitis. Excepturi sed, expedita, fugit, aut laudantium nisi dolorum temporibus doloremque nobis eligendi optio quas esse inventore?
+    </p>
+
+    <input type ="button" value = "night" onclick = "
+        if (this.value ==='night'){
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+            this.value ='day'
+        } else {
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+            this.value ='night';
+        }
+    ">
+</body>
+</html>
