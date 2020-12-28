@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
     <style>
         .js{
             font-weight: bold;
@@ -14,46 +17,8 @@
         }
     </style>
     <title>ex3.html</title>
-    <script>
-    var Links = {
-        setColor : function (color){
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i<alist.length){
-                alist[i].style.color = color;
-                i = i + 1;
-            }
-        }
-    }
-
-    var Body = {
-        setColor: function (color){
-            document.querySelector('body').style.color = color;
-        },
-        setBackgroundColor: function (color){
-            document.querySelector('body').style.backgroundColor = color;
-        }
-    }
-
-    function nightDayHandler(self){
-        var target = document.querySelector('body');
-        if (self.value ==='night'){
-            Body.setBackgroundColor('black');
-            Body.setColor('white');
-            self.value = 'day';
-
-            Links.setColor('powderblue');
-        } else {
-            Body.setBackgroundColor('white');
-            Body.setColor('black');
-            self.value = 'night';
-            
-            Links.setColor('blue');
-        }
-    }
-    </script>
+    <script src = "color.js"></script>
 </head>
-
 <body>
     <h1><a href="index.html"">WEB</a></h1>
     <input id ="night_day" type ="button" value = "night" onclick = "
@@ -65,7 +30,7 @@
         <li><a href="3.html">JavaScript</a></li>
     </ol>
     
-    <h2>JAVAScript</h2>
+    <h2>Css</h2>
     <p>
         <span id ="first" class="js">JavaScript</span>
         Lorem ipsum dolor sit <span>amet</span> consectetur adipisicing elit. Ratione illo quas harum voluptatem debitis. Excepturi sed, expedita, fugit, aut laudantium nisi dolorum temporibus doloremque nobis eligendi optio quas esse inventore?
